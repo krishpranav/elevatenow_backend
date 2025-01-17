@@ -1,7 +1,7 @@
 /**
- * @file: course.go
+ * @file: user_controller.go
  * @author: Krisna Pranav
- * @brief: course models
+ * @brief: user controller
  * @version 1.0
  * @date 2025-01-17
  *
