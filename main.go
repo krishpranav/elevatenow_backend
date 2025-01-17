@@ -19,8 +19,12 @@ import (
 func main() {
 	app := gin.Default()
 
+	/// POST
 	app.POST("/register", controllers.RegisterUser)
+
+	/// GET
 	app.GET("/healthcheck", controllers.CheckHealth)
+	app.GET("/courses", controllers.GetCourses)
 
 	app.Run()
 }
