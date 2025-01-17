@@ -23,3 +23,6 @@ jobs:
 
     - name: Get Dependencies
       run: go mod tidy
+
+    - name: Build
+      run: go build -v ./...
