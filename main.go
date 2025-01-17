@@ -12,20 +12,15 @@
 package main
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
+	"github.com/krishpranav/elevatenow_backend/controllers"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", health)
+	app := gin.Default()
 
-	r.Run()
-}
+	app.POST("/register", controllers.RegisterUser)
+	app.GET("/healthcheck", controllers.CheckHealth)
 
-func health(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"message": "pong",
-	})
+	app.Run()
 }
