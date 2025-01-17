@@ -1,6 +1,6 @@
 module github.com/krishpranav/elevatenow_backend
 
-go 1.21.4
+go 1.23.5
 
 require github.com/gin-gonic/gin v1.10.0
 
